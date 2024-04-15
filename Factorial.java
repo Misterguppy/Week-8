@@ -6,13 +6,18 @@ public class Factorial {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number: ");
         int num = input.nextInt();
-        int num2 = num;
         input.close();
-        int counted = 1;
-        for(num = num2; num> 0; num += 1){
-            counted = counted * num;
+        boolean counted = false;
+        int numCount = 1;
+        int Count = 1;
+        while(!counted){
+            System.out.println(numCount);
+            numCount += 1;
+            Count += numCount;
+            if(numCount == num)
+            counted = true;
         }
-        System.out.println("The factorial of " +num2 + " is "+counted);
+        System.out.println("The factorial of " +num + " is "+count);
         
     }
 
