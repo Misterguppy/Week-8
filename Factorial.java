@@ -9,15 +9,15 @@ public class Factorial {
         input.close();
         boolean counted = false;
         int numCount = 1;
-        int Count = 1;
+        int count = 1;
         while(!counted){
             System.out.println(numCount);
             numCount += 1;
-            Count += numCount;
+            count *= numCount;
             if(numCount == num)
             counted = true;
         }
-        System.out.println("The factorial of " +num + " is "+count);
+        System.out.println("The factorial of " +num + " is "+ count);
         
     }
 
